@@ -90,7 +90,6 @@ extern int get_clock();
 
 /******************************* General **************************************/
 #define NULL ((void *)0)
-#define BASE_PRIORITY 4
 
 
 #define PAGE_SIZE      512                /* size of a page in bytes        */
@@ -164,8 +163,7 @@ extern INT_VECTOR Int_Vector;                   /* interrupt vector         */
 
 #define NULL ((void *)0)
 #define MAX_PRIORITY 5;
-
-int quantum_time = 5;
+int QUANTUM_TIME = 5;
 
 typedef struct ready_queue_node READY_QUEUE_NODE; //cria estrutura recursiva
 
@@ -198,7 +196,7 @@ BOOL ready_queue_is_empty(int id_queue) //retorna verdadeiro se a fila estiver v
         return false;
 }
 
-/* IMPLEMENTAÇÃO DO ROUND ROBIN SEM PRIORIDADE ENTRE PROCESSOS*/
+/* IMPLEMENTAÇÃO DO ROUND ROBIN COM PRIORIDADE ENTRE PROCESSOS*/
 // utiliza filas do tipo FIFO
 // Deleta o processo da fila quando o encontra
 PCB *get_next_pcb() {
@@ -210,7 +208,7 @@ PCB *get_next_pcb() {
             READY_QUEUE_NODE *first_node = vector[count].first; //salva o primeiro elemento em uma variável
             vector[count].first = vector[count].first->next; // transforma o segundo em primeiro
             next_pcb = first_node->pcb; //passa o processo para uma variável
-            quantum_time = vector[count].new_quantum_value; //atualiza valor global do quantum
+            QUANTUM_TIME = vector[count].new_quantum_value; //atualiza valor global do quantum
             free(first_node); //libera o espaço da memória
             break;
         } else {
@@ -246,13 +244,14 @@ BOOL exists(PCB *pcb) //verifica se já existe o processo na fila de pronto
     return found; //retorna true se encontrou
 }
 
-READY_QUEUE_NODE *create_new_node(PCB *pcb) {
+READY_QUEUE_NODE *create_new_node(PCB *pcb) { //cria nova estrutura de nó para a fila com o pcb passado
     READY_QUEUE_NODE *new_node = (READY_QUEUE_NODE *) malloc(sizeof(READY_QUEUE_NODE));
     new_node->pcb = pcb;
     new_node->next = NULL;
     return new_node;
 }
 
+//printa a fila no terminal
 void print_queue() {
 
     fprintf(stderr, "-------------------INICIO DO METODO PRINT QUEUE------------------------\n");
@@ -295,7 +294,7 @@ void print_queue() {
 
 
 void cpu_init() {
-    set_timer(quantum_time);
+    set_timer(QUANTUM_TIME);
 
     ready_queue_priority_0.first = NULL; //maior prioridade
     ready_queue_priority_0.last = NULL;
@@ -321,38 +320,43 @@ void cpu_init() {
     ready_queue_priority_3.new_quantum_value = 20;
     vector[3] = ready_queue_priority_3;
 
-    ready_queue_priority_4.first = 0;
-    ready_queue_priority_4.last = 0;
+    ready_queue_priority_4.first = NULL;
+    ready_queue_priority_4.last = NULL;
     ready_queue_priority_4.id = 4;
     ready_queue_priority_4.new_quantum_value = 25;
     vector[4] = ready_queue_priority_4;
 
-    ready_queue_priority_5.first = 0; //menor prioridade
-    ready_queue_priority_5.last = 0;
+    ready_queue_priority_5.first = NULL; //menor prioridade
+    ready_queue_priority_5.last = NULL;
     ready_queue_priority_5.id = 5;
     ready_queue_priority_5.new_quantum_value = 30; //maior quantum
     vector[5] = ready_queue_priority_5;
 
 }
 
+//insere o novo nó na fila passada como parâmetro
 void insert_into_queue(int id_queue, READY_QUEUE_NODE *new_node) {
-    if (!ready_queue_is_empty(id_queue)) {
+    if (!ready_queue_is_empty(id_queue)) { //verifica se a fila está vazia
         READY_QUEUE_NODE *current = vector[id_queue].first; //pega o primeiro elemento
         do {
             if (current->next != NULL) { //percorre a fila até achar
-                current = current->next;
+                current = current->next; //pega o próximo
             } else {
-                current->next = new_node;
+                current->next = new_node; //adiciona no final da fila
                 break;
             }
         } while (current != NULL); //até o fim da fila
 
     } else {
-        vector[id_queue].first = new_node;
+        vector[id_queue].first = new_node; // se fila vazia, coloca nó como primeiro elemento
     }
-    vector[id_queue].last = new_node;
+    vector[id_queue].last = new_node; // ponteiro para o novo ultimo nó da lista
 }
 
+//identifica qual a nova fila para inserir o processo
+//decide a fila baseado na prioridade do processo
+//prioridades maiores, filas com id menores
+//prioridades menores, filas com id maiores
 void find_new_queue(READY_QUEUE_NODE *new_node) {
     switch (new_node->pcb->priority) {
         case 0:
@@ -395,7 +399,7 @@ void dispatch() {
         next_pcb->status = running;
         prepage(next_pcb);
         next_pcb->last_dispatch = get_clock();
-        set_timer(quantum_time);
+        set_timer(QUANTUM_TIME);
     } else {
         PTBR = NULL;
     }
@@ -403,13 +407,18 @@ void dispatch() {
 
 void insert_ready(PCB *pcb) {
 
+    //verifica se o processo não existe em nenhuma das filas
     if (!exists(pcb)) {
 
+        //se não existe, cria um nó para ele
         READY_QUEUE_NODE *new_node = create_new_node(pcb);
+
+        //se todas as filas estiverem vazias
         if (ready_queue_is_empty(0) && ready_queue_is_empty(1) &&
             ready_queue_is_empty(2) && ready_queue_is_empty(3) &&
             ready_queue_is_empty(4) && ready_queue_is_empty(5)) {
 
+            //novo processo recebe prioridade alta
             new_node->pcb->priority = MAX_PRIORITY;
 
 
@@ -418,18 +427,21 @@ void insert_ready(PCB *pcb) {
             if (pcb->accumulated_cpu == 0) { // Novo processo
                 pcb->priority = MAX_PRIORITY;
             } else {
+                //armazena o tempo usado da cpu pelo processo na ultima vez que foi escalonado
                 int cpu_time_used = new_node->pcb->last_cpuburst;
 
-                if (cpu_time_used > quantum_time * 0.9 && new_node->pcb->priority != 0) {
+                if (cpu_time_used > QUANTUM_TIME * 0.9 && new_node->pcb->priority != 0) {
                     new_node->pcb->priority--; //prioridade do processo diminui caso ele use mais de 90% do quantum
 
-                } else if (cpu_time_used < quantum_time * 0.5 && new_node->pcb->priority != 5) {
+                } else if (cpu_time_used < QUANTUM_TIME * 0.5 && new_node->pcb->priority != 5) {
                     new_node->pcb->priority++; // prioridade do processo aumenta caso ele use menos de 50% do quantum
                 }
             }
 
         }
+        //encontra a nova fila ideal para o processo baseado na sua nova prioridade
         find_new_queue(new_node);
+
         // muda o status do processo para "ready"
         pcb->status = ready;
     }
