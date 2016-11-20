@@ -1,0 +1,342 @@
+
+
+
+*******************************************************************
+*                                                                 *
+*              WELCOME TO OPERATING SYSTEM PROJECT               *
+*                         Release 1.7                             *
+*                                                                 *
+*******************************************************************
+
+
+
+Copyright (C) 1990  The Research Foundation of SUNY,
+		    Michael Kifer and Scott S. Smolka
+
+(see $HOME/LICENCE for terms and conditions)
+
+
+
+
+================  Summary of Simulation Parameters  ===============
+
+Intensity of New Process Creation               = 4
+Average CPU Time per Process                    = 100
+Overall Frequency of Events                     = 4
+  Share of Memory Related Events                   = 2
+  Share of I/O Related Events                      = 2
+  Share of Resource Related Events                 = 2
+  Share of Socket Related Events                   = 4
+Socket simulation mode                             = stream and dgram
+CPU Time Quantum                                = 100
+Degree of Prepaging                             = 0
+Memory Reference Pattern                        = random
+Deadlock Handling Method                        = avoidance
+Simulation Time                                 = 40000
+Number of Snapshots                             = 4
+Trace Switch                                    = off
+Type of Run                                     = noninteractive
+
+
+
+====================  Beginning of Simulation  ====================
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  10000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   314    61   none   none                 none    none   none  none       *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   48  1555     7551           9983           7        333  ready        4 *
+*   64  4175     9936           9939           7          7  ready        4 *
+*   61  1756     9672           9732           3         28  waiting      5 *
+*   62  5581     9847           9920           5         29  ready        4 *
+*   63  6417     9856           9994           4         51  ready        5 *
+*   65  7659     9991           9998           3          3  running      5 *
+*   59  1963     8937           9880           8        230  ready        4 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    66
+  Total num of processes terminated                             =   57
+  Total num of processes killed                                 =    2
+        num of processes in CPU ready queue                     =    5
+        num of processes in event waiting queues                =    1
+
+  Total num of wait requests                               =   62
+  Total num of signals                                     =  193
+  Total num of timer interrupts                            = 1029
+
+CPU time used                                        =  5239
+CPU utilization                                      =     0.5239
+
+Memory utilization                                   =     0.4256
+
+System throughput ( x 1000 )                         =     5.7000
+Average num of processes during simulation           =     4.2393
+Average CPU time per process                         =    92.4242
+Average waiting time per process                     =   559.8636
+Average turnaround time per process                  =   642.3182
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  20001                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   627   128   none   none                 none    none   none  none       *
+*   632   127   none   none                 none    none    100  Martha     *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*  123  1979    19158          19992           1         84  ready        5 *
+*  121  7066    18978          19994           6        115  ready        4 *
+*  117  5132    18608          20000           3        195  running      5 *
+*  128  5003    19533          19611           4         32  waiting      5 *
+*  127  2211    19395          19643           4         46  waiting      5 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =   130
+  Total num of processes terminated                             =  110
+  Total num of processes killed                                 =   15
+        num of processes in CPU ready queue                     =    2
+        num of processes in event waiting queues                =    2
+
+  Total num of wait requests                               =  121
+  Total num of signals                                     =  377
+  Total num of timer interrupts                            = 2042
+
+CPU time used                                        = 10410
+CPU utilization                                      =     0.5205
+
+Memory utilization                                   =     0.4775
+
+System throughput ( x 1000 )                         =     5.4997
+Average num of processes during simulation           =     4.8196
+Average CPU time per process                         =    87.2462
+Average waiting time per process                     =   658.7538
+Average turnaround time per process                  =   741.5154
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  30000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   946   182   none   none                 none    none   none  none       *
+*   963   189    535   bob                  none    none   none  none       *
+*   969   185   none   none                 none    none    160  Xwindow    *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*  187  7970    29319          29904           6        116  ready        4 *
+*  188  2178    29340          29883           7        109  ready        4 *
+*  180  6014    28237          29998           4        183  running      5 *
+*  182  1296    28634          29154           4         55  waiting      4 *
+*  185  2213    29054          29989           2         65  waiting      5 *
+*  189  5563    29478          29817           1         86  waiting      5 *
+*  191  8024    29731          29962           6         42  ready        4 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =   192
+  Total num of processes terminated                             =  168
+  Total num of processes killed                                 =   17
+        num of processes in CPU ready queue                     =    3
+        num of processes in event waiting queues                =    3
+
+  Total num of wait requests                               =  192
+  Total num of signals                                     =  563
+  Total num of timer interrupts                            = 3096
+
+CPU time used                                        = 15980
+CPU utilization                                      =     0.5327
+
+Memory utilization                                   =     0.5453
+
+System throughput ( x 1000 )                         =     5.6000
+Average num of processes during simulation           =     5.2011
+Average CPU time per process                         =    89.3229
+Average waiting time per process                     =   726.9062
+Average turnaround time per process                  =   812.6719
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  40007                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*  1283   238    750   bob                  none    none   none  none       *
+*  1296   234    760   HiThere              none    none   none  none       *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*  230  6475    38311          39985           8        161  ready        4 *
+*  232  6916    38500          40006           3        228  running      5 *
+*  234  1784    38599          39984           1        130  waiting      5 *
+*  238  7619    39040          39700           5         79  waiting      4 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =   240
+  Total num of processes terminated                             =  213
+  Total num of processes killed                                 =   23
+        num of processes in CPU ready queue                     =    1
+        num of processes in event waiting queues                =    2
+
+  Total num of wait requests                               =  265
+  Total num of signals                                     =  759
+  Total num of timer interrupts                            = 4106
+
+CPU time used                                        = 21468
+CPU utilization                                      =     0.5366
+
+Memory utilization                                   =     0.5939
+
+System throughput ( x 1000 )                         =     5.3241
+Average num of processes during simulation           =     5.3228
+Average CPU time per process                         =    93.8167
+Average waiting time per process                     =   794.5375
+Average turnaround time per process                  =   887.2958
+
+
+
+
+
+
+
+====================     End of Simulation     ====================
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  40007                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*  1283   238    750   bob                  none    none   none  none       *
+*  1296   234    760   HiThere              none    none   none  none       *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*  230  6475    38311          39985           8        161  ready        4 *
+*  232  6916    38500          40006           3        228  running      5 *
+*  234  1784    38599          39984           1        130  waiting      5 *
+*  238  7619    39040          39700           5         79  waiting      4 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =   240
+  Total num of processes terminated                             =  213
+  Total num of processes killed                                 =   23
+        num of processes in CPU ready queue                     =    1
+        num of processes in event waiting queues                =    2
+
+  Total num of wait requests                               =  265
+  Total num of signals                                     =  759
+  Total num of timer interrupts                            = 4106
+
+CPU time used                                        = 21468
+CPU utilization                                      =     0.5366
+
+Memory utilization                                   =     0.5939
+
+System throughput ( x 1000 )                         =     5.3241
+Average num of processes during simulation           =     5.3228
+Average CPU time per process                         =    93.8167
+Average waiting time per process                     =   794.5375
+Average turnaround time per process                  =   887.2958
+
+
+
+
