@@ -3,8 +3,8 @@
 
 /****************************************************************************/
 /*                                                                          */
-/* 			     Module CPU                                     */
-/* 			External Declarations 				    */
+/*               Module CPU                                     */
+/*          External Declarations                   */
 /*                                                                          */
 /****************************************************************************/
 
@@ -69,9 +69,9 @@ struct pcb_node {
 extern PAGE_TBL *PTBR;        /* page table base register */
 
 extern int Quantum;        /* global time quantum; contains the value
-				   entered at the beginning or changed
-				   at snapshot. Has no effect on timer
-				   interrupts, unless passed to set_timer() */
+                   entered at the beginning or changed
+                   at snapshot. Has no effect on timer
+                   interrupts, unless passed to set_timer() */
 
 
 
@@ -202,33 +202,24 @@ BOOL ready_queue_is_empty(int id_queue) //retorna verdadeiro se a fila estiver v
 // utiliza filas do tipo FIFO
 // Deleta o processo da fila quando o encontra
 PCB *get_next_pcb() {
-    fprintf(stderr, "-------------------INICIO DO METODO NEXT_PCB------------------------\n");
     PCB *next_pcb;
 
     int count = 0;
     while (count < 6) {
-        fprintf(stderr, "VERIFICANDO TODAS AS FILAS\n");
-        fprintf(stderr, "CHECANDO FILA %d\n", count);
         if (!ready_queue_is_empty(count)) {
-            fprintf(stderr, "FILA %d NAO VAZIA\n", count);
             READY_QUEUE_NODE *first_node = vector[count].first; //salva o primeiro elemento em uma variável
             vector[count].first = vector[count].first->next; // transforma o segundo em primeiro
             next_pcb = first_node->pcb; //passa o processo para uma variável
             quantum_time = vector[count].new_quantum_value; //atualiza valor global do quantum
-            fprintf(stderr, "PROCESSO PEGO: %d\n", first_node->pcb->pcb_id);
             free(first_node); //libera o espaço da memória
             break;
         } else {
-            fprintf(stderr, "FILA %d VAZIA\n", count);
             if (count == 5) {
-                fprintf(stderr, "RETORNA NULL\n", count);
                 return NULL;
             }
         }
         count++;
     }
-
-    fprintf(stderr, "-------------------FIM DO METODO DISPACH------------------------\n");
     return next_pcb; //retorna o processo
 }
 
@@ -297,8 +288,8 @@ void print_queue() {
 
 /****************************************************************************/
 /*                                                                          */
-/*				Module CPU				    */
-/*			     Internal Routines				    */
+/*              Module CPU                  */
+/*               Internal Routines                  */
 /*                                                                          */
 /****************************************************************************/
 
@@ -345,39 +336,24 @@ void cpu_init() {
 }
 
 void insert_into_queue(int id_queue, READY_QUEUE_NODE *new_node) {
-    fprintf(stderr, "-------------------INICIO DO METODO INSERT INTO QUEUE------------------------\n");
-    fprintf(stderr, "INSERINDO NA FILA %d\n", id_queue);
     if (!ready_queue_is_empty(id_queue)) {
-        fprintf(stderr, "FILA NAO VAZIA\n");
         READY_QUEUE_NODE *current = vector[id_queue].first; //pega o primeiro elemento
         do {
-            fprintf(stderr, "--VERIFICA SE EXISTE MAIS ELEMENTOS NA FILA\n");
             if (current->next != NULL) { //percorre a fila até achar
-                fprintf(stderr, "EXISTE MAIS ELEMENTOS NA FILA\n");
                 current = current->next;
             } else {
-                fprintf(stderr, "NAO EXISTEM MAIS ELEMENTOS NA FILA\n");
                 current->next = new_node;
-                fprintf(stderr, "ATUAL -> NEXT = NOVO NODE\n");
                 break;
             }
         } while (current != NULL); //até o fim da fila
 
     } else {
-        fprintf(stderr, "FILA VAZIA\n");
         vector[id_queue].first = new_node;
     }
-
-    fprintf(stderr, "FIM DO LOOP\n");
     vector[id_queue].last = new_node;
-
-    print_queue();
-    fprintf(stderr, "-------------------FIM DO METODO INSERT INTO QUEUE------------------------\n");
 }
 
 void find_new_queue(READY_QUEUE_NODE *new_node) {
-    fprintf(stderr, "-------------------INICIO DO METODO FIND NEW QUEUE------------------------\n");
-    fprintf(stderr, "PROCESSO COM PRIORIDADE: %d\n", new_node->pcb->priority);
     switch (new_node->pcb->priority) {
         case 0:
             insert_into_queue(5, new_node);
@@ -398,21 +374,14 @@ void find_new_queue(READY_QUEUE_NODE *new_node) {
             insert_into_queue(0, new_node);
             break;
     }
-    fprintf(stderr, "-------------------FIM DO METODO FIND NEW QUEUE------------------------\n");
 }
 
 
 void dispatch() {
-    fprintf(stderr, "-------------------INICIO DO METODO DISPACH------------------------\n");
-    fprintf(stderr, "PRINTA FILAS DE PRONTO NO INICIO DO DESPACH\n");
-    print_queue();
     // Verifica se havia outro processo rodando antes e o coloca no final da lista de pronto
 
     if (PTBR != NULL && PTBR->pcb->status == running) {
-        fprintf(stderr, "HAVIA PROCESSO RODANDO\n");
         insert_ready(PTBR->pcb);
-    } else {
-        fprintf(stderr, "NAO HAVIA PROCESSO RODANDO\n");
     }
 
     // Pega o primeiro processo da fila de pronto
@@ -422,74 +391,48 @@ void dispatch() {
     // Aloca o processo
 
     if (next_pcb != NULL) {
-        fprintf(stderr, "ALOCANDO O PROCESSO \n");
         PTBR = next_pcb->page_tbl;
         next_pcb->status = running;
         prepage(next_pcb);
         next_pcb->last_dispatch = get_clock();
         set_timer(quantum_time);
-        fprintf(stderr, "PROCESSO ALOCADO\n");
     } else {
-        fprintf(stderr, "PROCESSO NAO ALOCADO\n");
         PTBR = NULL;
     }
-    fprintf(stderr, "-------------------FIM DO METODO DISPACH------------------------\n");
 }
 
 void insert_ready(PCB *pcb) {
 
     if (!exists(pcb)) {
-        fprintf(stderr, "-------------------INICIO DO METODO INSERT_READY------------------------\n");
 
-        fprintf(stderr, "CRIA NODE PARA PCB \n");
         READY_QUEUE_NODE *new_node = create_new_node(pcb);
-        fprintf(stderr, "NODE PARA PCB CRIADO\n");
-
-        fprintf(stderr, "VERIFICA SE FILAS ESTAO TODAS VAZIAS\n");
         if (ready_queue_is_empty(0) && ready_queue_is_empty(1) &&
             ready_queue_is_empty(2) && ready_queue_is_empty(3) &&
             ready_queue_is_empty(4) && ready_queue_is_empty(5)) {
 
-            fprintf(stderr, "FILAS TODAS VAZIAS\n");
             new_node->pcb->priority = MAX_PRIORITY;
-            fprintf(stderr, "NOVA PRIORIDADE DO PROCESSO: %d\n", new_node->pcb->priority);
 
-            print_queue();
 
         } else {
-            fprintf(stderr, "FILAS NAO ESTAO TODAS VAZIAS\n");
-            // Calculate new priority //
-            fprintf(stderr, "VERIFICA SE PROCESSO É NOVO\n");
-            if (pcb->accumulated_cpu == 0) { // New proccess
+            // Calculando nova prioridade //
+            if (pcb->accumulated_cpu == 0) { // Novo processo
                 pcb->priority = MAX_PRIORITY;
-                fprintf(stderr, "PROCESSO É NOVO\n");
             } else {
-                fprintf(stderr, "PROCESSO NAO É NOVO\n");
                 int cpu_time_used = new_node->pcb->last_cpuburst;
 
                 if (cpu_time_used > quantum_time * 0.9 && new_node->pcb->priority != 0) {
-                    new_node->pcb->priority--;
-                    fprintf(stderr, "PROCESSO USOU MAIS DE 90 POR CENTO DO TEMPO DE CPU. NOVA PRIORIDADE: %d\n",
-                            new_node->pcb->priority);
+                    new_node->pcb->priority--; //prioridade do processo diminui caso ele use mais de 90% do quantum
 
                 } else if (cpu_time_used < quantum_time * 0.5 && new_node->pcb->priority != 5) {
-                    new_node->pcb->priority++;
-                    fprintf(stderr, "PROCESSO USOU MENOS DE 50 POR CENTO DO TEMPO DE CPU. NOVA PRIORIDADE: %d\n",
-                            new_node->pcb->priority);
+                    new_node->pcb->priority++; // prioridade do processo aumenta caso ele use menos de 50% do quantum
                 }
             }
 
         }
-        fprintf(stderr, "INSERIR NA FILA ESPECIFICA\n");
         find_new_queue(new_node);
         // muda o status do processo para "ready"
         pcb->status = ready;
-        fprintf(stderr, "MUDA O STATUDO DO PCB PARA READY\n");
-//    }
-
-        fprintf(stderr, "-------------------FIM DO METODO INSERT_READY------------------------\n");
     }
 }
 
 /* end of module */
-
