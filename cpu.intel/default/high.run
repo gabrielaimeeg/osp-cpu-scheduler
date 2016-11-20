@@ -1,0 +1,479 @@
+
+
+
+*******************************************************************
+*                                                                 *
+*              WELCOME TO OPERATING SYSTEM PROJECT               *
+*                         Release 1.7                             *
+*                                                                 *
+*******************************************************************
+
+
+
+Copyright (C) 1990  The Research Foundation of SUNY,
+		    Michael Kifer and Scott S. Smolka
+
+(see $HOME/LICENCE for terms and conditions)
+
+
+
+
+================  Summary of Simulation Parameters  ===============
+
+Intensity of New Process Creation               = 10
+Average CPU Time per Process                    = 300
+Overall Frequency of Events                     = 10
+  Share of Memory Related Events                   = 3
+  Share of I/O Related Events                      = 3
+  Share of Resource Related Events                 = 3
+  Share of Socket Related Events                   = 1
+Socket simulation mode                             = stream and dgram
+CPU Time Quantum                                = 150
+Degree of Prepaging                             = 4
+Memory Reference Pattern                        = random
+Deadlock Handling Method                        = avoidance
+Simulation Time                                 = 40000
+Number of Snapshots                             = 4
+Trace Switch                                    = off
+Type of Run                                     = noninteractive
+
+
+
+====================  Beginning of Simulation  ====================
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  10020                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   444    13   none   none                 none    none   none  none       *
+*   441     3    286   dump                 none    none   none  none       *
+*   423    21    272   mbox                 none    none   none  none       *
+*   309    12   none   none                 none    none      5  Xwindow    *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    8  4441     2839           9993           2        203  ready     9724 *
+*   14  5100     5667           9808           4        109  ready     9824 *
+*   12  2838     4507           5193           9         69  waiting   5122 *
+*    3  8110      618           9777           6        132  waiting   9585 *
+*    4  2774      880           9879           4        283  ready     9883 *
+*    9  4584     3610           9920           1        204  ready     9933 *
+*   16  1133     6315           9853           2         70  ready     9855 *
+*   10   933     3956           9747          14        232  ready     9761 *
+*   11  5504     4041           9972           1        201  ready     9979 *
+*   13  7828     4726           9629           3        102  waiting   9435 *
+*   15  3114     6060           9795           2         67  ready     9797 *
+*   17  1992     6443           9891           5         56  ready     9902 *
+*   18  3134     6592           9945           1         46  ready     9952 *
+*   19  2339     6779           9963           1         53  ready     9970 *
+*   20  7527     7154          10019           1         22  running   9751 *
+*   21  6167     7370           9471           1         28  waiting   9154 *
+*   22  4442     8150           9946           3         19  ready     9955 *
+*   23  4379     9068           9797           3         12  ready     9800 *
+*   24  2713     9368           9826           1         12  ready     9827 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    25
+  Total num of processes terminated                             =    5
+  Total num of processes killed                                 =    1
+        num of processes in CPU ready queue                     =   14
+        num of processes in event waiting queues                =    4
+
+  Total num of wait requests                               =  104
+  Total num of signals                                     =  253
+  Total num of timer interrupts                            =    0
+
+CPU time used                                        =  2060
+CPU utilization                                      =     0.2056
+
+Memory utilization                                   =     0.9355
+
+System throughput ( x 1000 )                         =     0.4990
+Average num of processes during simulation           =    10.2403
+Average CPU time per process                         =   313.9200
+Average waiting time per process                     =  4016.0800
+Average turnaround time per process                  =  4104.3200
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  20000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   465    21   none   none                  105       4   none  none       *
+*   484    27   none   none                  110       4   none  none       *
+*   490    23   none   none                  112       3   none  none       *
+*   700    16   none   none                  145       2   none  none       *
+*   696    18   none   none                 none    none     15  check_mail *
+*   664    15   none   none                 none    none     12  jokes      *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    8  4441     2839          19769           1        296  ready    19782 *
+*   14  5100     5667          19953           1        201  ready    19960 *
+*   12  2838     4507          19752           5        124  ready    19769 *
+*    3  8110      618          19919           1        217  ready    19932 *
+*    4  2774      880          19812           3        389  ready    19821 *
+*    9  4584     3610          19974           1        311  ready    19975 *
+*   16  1133     6315          19940           2        151  waiting  19632 *
+*   28  7089    14104          19898           3         37  ready    19913 *
+*   13  7828     4726          19888           2        183  ready    19902 *
+*   15  3114     6060          18704           6        183  waiting  18471 *
+*   17  1992     6443          19942          11        187  ready    19959 *
+*   18  3134     6592          19790           4        151  waiting  19513 *
+*   19  2339     6779          19862          14        177  ready    19876 *
+*   21  6167     7370          10331          14         46  waiting  10063 *
+*   22  4442     8150          19687           6        139  ready    19699 *
+*   23  4379     9068          11443           3         27  waiting  10957 *
+*   24  2713     9368          19995           1        107  running  19679 *
+*   26   926    10672          19701          27        223  ready    19728 *
+*   27  3728    10995          11019           1          1  waiting     17 *
+*   29  6775    14269          19847           1         58  ready    19860 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    30
+  Total num of processes terminated                             =    9
+  Total num of processes killed                                 =    1
+        num of processes in CPU ready queue                     =   13
+        num of processes in event waiting queues                =    6
+
+  Total num of wait requests                               =  161
+  Total num of signals                                     =  420
+  Total num of timer interrupts                            =    0
+
+CPU time used                                        =  3239
+CPU utilization                                      =     0.1620
+
+Memory utilization                                   =     0.9675
+
+System throughput ( x 1000 )                         =     0.4500
+Average num of processes during simulation           =    15.8495
+Average CPU time per process                         =   359.9333
+Average waiting time per process                     = 10452.2333
+Average turnaround time per process                  = 10566.9333
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  30001                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*  1026    12   none   none                 none    none   none  none       *
+*   820    14   none   none                  169       3   none  none       *
+*   949     3   none   none                  191       2   none  none       *
+*   490    23   none   none                  112       3   none  none       *
+*   884    27   none   none                  182       2   none  none       *
+*   889    31   none   none                  183       4   none  none       *
+*   835    28   none   none                  174       3   none  none       *
+*   895    22   none   none                  184       3   none  none       *
+*   969    33   none   none                  196       2   none  none       *
+*   909    19   none   none                  186       3   none  none       *
+*  1021    30   none   none                  206       3   none  none       *
+*   935    16   none   none                  189       4   none  none       *
+*  1027    26   none   none                  207       2   none  none       *
+*  1029    29   none   none                  208       3   none  none       *
+*   923     4   none   none                 none    none     24  games      *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   30   807    25304          29477           4         83  waiting  29209 *
+*   14  5100     5667          24246           1        222  waiting  24055 *
+*   12  2838     4507          29759           4        277  waiting  29533 *
+*    3  8110      618          27693           9        355  waiting  27633 *
+*    4  2774      880          26925           9        544  waiting  26577 *
+*    9  4584     3610          29993           2        598  ready    30007 *
+*   16  1133     6315          27431           1        186  waiting  27302 *
+*   28  7089    14104          24889           1         71  waiting  24783 *
+*   31  4103    25977          26255           6         13  waiting  26002 *
+*   13  7828     4726          29995           3        377  ready    30010 *
+*   15  3114     6060          29958           1        289  ready    29959 *
+*   32  1277    26832          29906           6        126  ready    29912 *
+*   33  2508    27197          28210           5         24  waiting  28031 *
+*   19  2339     6779          26754           1        304  waiting  26655 *
+*   34  2176    27353          29967           2         26  ready    29975 *
+*   21  6167     7370          29998           4        199  running  29879 *
+*   22  4442     8150          26478           1        240  waiting  26355 *
+*   23  4379     9068          11443           3         27  waiting  10957 *
+*   24  2713     9368          29879           3        329  ready    29888 *
+*   35  1556    27391          29912           2         68  ready    29920 *
+*   26   926    10672          29801           1        422  waiting  29593 *
+*   27  3728    10995          26107           2        102  waiting  25921 *
+*   29  6775    14269          29802           9        216  waiting  29616 *
+*   36  3738    28912          29940           2         32  ready    29948 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    37
+  Total num of processes terminated                             =   12
+  Total num of processes killed                                 =    1
+        num of processes in CPU ready queue                     =    8
+        num of processes in event waiting queues                =   15
+
+  Total num of wait requests                               =  252
+  Total num of signals                                     =  636
+  Total num of timer interrupts                            =    0
+
+CPU time used                                        =  4751
+CPU utilization                                      =     0.1584
+
+Memory utilization                                   =     0.9781
+
+System throughput ( x 1000 )                         =     0.4000
+Average num of processes during simulation           =    17.1697
+Average CPU time per process                         =   410.5676
+Average waiting time per process                     = 13786.9730
+Average turnaround time per process                  = 13922.8378
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  40009                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*  1388    31   none   none                 none    none   none  none       *
+*  1388    40   none   none                 none    none   none  none       *
+*  1388    30   none   none                 none    none   none  none       *
+*  1440    22   none   none                 none    none   none  none       *
+*  1440    33   none   none                 none    none   none  none       *
+*  1470    29   none   none                 none    none   none  none       *
+*  1456    19    967   wonderfile           none    none   none  none       *
+*  1458    21    969   wonderfile           none    none   none  none       *
+*  1461    16    972   jokes                none    none   none  none       *
+*   820    14   none   none                  169       3   none  none       *
+*   949     3   none   none                  191       2   none  none       *
+*   490    23   none   none                  112       3   none  none       *
+*   884    27   none   none                  182       2   none  none       *
+*  1468    39   none   none                  285       3   none  none       *
+*   835    28   none   none                  174       3   none  none       *
+*  1474    32   none   none                  286       3   none  none       *
+*  1406    37   none   none                  279       3   none  none       *
+*  1076     4   none   none                  217       3   none  none       *
+*  1108    24   none   none                 none    none     32  Roger      *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   30   807    25304          39371           7        296  waiting  39210 *
+*   14  5100     5667          24246           1        222  waiting  24055 *
+*   12  2838     4507          40008          25        527  running  39950 *
+*    3  8110      618          27693           9        355  waiting  27633 *
+*    4  2774      880          30890          20        580  waiting  30850 *
+*   37  5140    30312          38385           1        149  waiting  38159 *
+*   16  1133     6315          39782           3        462  waiting  39591 *
+*   28  7089    14104          24889           1         71  waiting  24783 *
+*   31  4103    25977          37818           1        208  waiting  37702 *
+*   39  1559    38228          39839           1         45  waiting  39690 *
+*   40  1686    38262          38434           8         14  waiting  38292 *
+*   32  1277    26832          39909           3        440  waiting  39845 *
+*   33  2508    27197          39912           5        558  waiting  39862 *
+*   19  2339     6779          39628           5        406  waiting  39485 *
+*   34  2176    27353          39981           1        184  ready    39988 *
+*   21  6167     7370          39639           2        320  waiting  39505 *
+*   22  4442     8150          39106           1        427  waiting  38988 *
+*   23  4379     9068          11443           3         27  waiting  10957 *
+*   24  2713     9368          31835           3        433  waiting  31687 *
+*   35  1556    27391          39990           2        352  ready    39925 *
+*   26   926    10672          39958           4        624  ready    39962 *
+*   27  3728    10995          26107           2        102  waiting  25921 *
+*   29  6775    14269          39864           1        366  waiting  39768 *
+*   36  3738    28912          39978           3         57  ready    39981 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    41
+  Total num of processes terminated                             =   15
+  Total num of processes killed                                 =    2
+        num of processes in CPU ready queue                     =    4
+        num of processes in event waiting queues                =   19
+
+  Total num of wait requests                               =  382
+  Total num of signals                                     =  922
+  Total num of timer interrupts                            =    0
+
+CPU time used                                        =  6716
+CPU utilization                                      =     0.1679
+
+Memory utilization                                   =     0.9832
+
+System throughput ( x 1000 )                         =     0.3749
+Average num of processes during simulation           =    18.5415
+Average CPU time per process                         =   380.9512
+Average waiting time per process                     = 17921.4390
+Average turnaround time per process                  = 18094.6829
+
+
+
+
+
+
+
+====================     End of Simulation     ====================
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  40009                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*  1388    31   none   none                 none    none   none  none       *
+*  1388    40   none   none                 none    none   none  none       *
+*  1388    30   none   none                 none    none   none  none       *
+*  1440    22   none   none                 none    none   none  none       *
+*  1440    33   none   none                 none    none   none  none       *
+*  1470    29   none   none                 none    none   none  none       *
+*  1456    19    967   wonderfile           none    none   none  none       *
+*  1458    21    969   wonderfile           none    none   none  none       *
+*  1461    16    972   jokes                none    none   none  none       *
+*   820    14   none   none                  169       3   none  none       *
+*   949     3   none   none                  191       2   none  none       *
+*   490    23   none   none                  112       3   none  none       *
+*   884    27   none   none                  182       2   none  none       *
+*  1468    39   none   none                  285       3   none  none       *
+*   835    28   none   none                  174       3   none  none       *
+*  1474    32   none   none                  286       3   none  none       *
+*  1406    37   none   none                  279       3   none  none       *
+*  1076     4   none   none                  217       3   none  none       *
+*  1108    24   none   none                 none    none     32  Roger      *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   30   807    25304          39371           7        296  waiting  39210 *
+*   14  5100     5667          24246           1        222  waiting  24055 *
+*   12  2838     4507          40008          25        527  running  39950 *
+*    3  8110      618          27693           9        355  waiting  27633 *
+*    4  2774      880          30890          20        580  waiting  30850 *
+*   37  5140    30312          38385           1        149  waiting  38159 *
+*   16  1133     6315          39782           3        462  waiting  39591 *
+*   28  7089    14104          24889           1         71  waiting  24783 *
+*   31  4103    25977          37818           1        208  waiting  37702 *
+*   39  1559    38228          39839           1         45  waiting  39690 *
+*   40  1686    38262          38434           8         14  waiting  38292 *
+*   32  1277    26832          39909           3        440  waiting  39845 *
+*   33  2508    27197          39912           5        558  waiting  39862 *
+*   19  2339     6779          39628           5        406  waiting  39485 *
+*   34  2176    27353          39981           1        184  ready    39988 *
+*   21  6167     7370          39639           2        320  waiting  39505 *
+*   22  4442     8150          39106           1        427  waiting  38988 *
+*   23  4379     9068          11443           3         27  waiting  10957 *
+*   24  2713     9368          31835           3        433  waiting  31687 *
+*   35  1556    27391          39990           2        352  ready    39925 *
+*   26   926    10672          39958           4        624  ready    39962 *
+*   27  3728    10995          26107           2        102  waiting  25921 *
+*   29  6775    14269          39864           1        366  waiting  39768 *
+*   36  3738    28912          39978           3         57  ready    39981 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    41
+  Total num of processes terminated                             =   15
+  Total num of processes killed                                 =    2
+        num of processes in CPU ready queue                     =    4
+        num of processes in event waiting queues                =   19
+
+  Total num of wait requests                               =  382
+  Total num of signals                                     =  922
+  Total num of timer interrupts                            =    0
+
+CPU time used                                        =  6716
+CPU utilization                                      =     0.1679
+
+Memory utilization                                   =     0.9832
+
+System throughput ( x 1000 )                         =     0.3749
+Average num of processes during simulation           =    18.5415
+Average CPU time per process                         =   380.9512
+Average waiting time per process                     = 17921.4390
+Average turnaround time per process                  = 18094.6829
+
+
+
+

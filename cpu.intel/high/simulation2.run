@@ -1,0 +1,1816 @@
+
+
+
+*******************************************************************
+*                                                                 *
+*              WELCOME TO OPERATING SYSTEM PROJECT               *
+*                         Release 1.7                             *
+*                                                                 *
+*******************************************************************
+
+
+
+Copyright (C) 1990  The Research Foundation of SUNY,
+		    Michael Kifer and Scott S. Smolka
+
+(see $HOME/LICENCE for terms and conditions)
+
+
+
+
+================  Summary of Simulation Parameters  ===============
+
+Intensity of New Process Creation               = 10
+Average CPU Time per Process                    = 300
+Overall Frequency of Events                     = 10
+  Share of Memory Related Events                   = 3
+  Share of I/O Related Events                      = 3
+  Share of Resource Related Events                 = 3
+  Share of Socket Related Events                   = 1
+Socket simulation mode                             = stream and dgram
+CPU Time Quantum                                = 150
+Degree of Prepaging                             = 4
+Memory Reference Pattern                        = random
+Deadlock Handling Method                        = avoidance
+Simulation Time                                 = 40000
+Number of Snapshots                             = 4
+Trace Switch                                    = off
+Type of Run                                     = noninteractive
+
+
+
+====================  Beginning of Simulation  ====================
+
+
+CLOCK>    522#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            518           3        211  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    528#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            525           2        216  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    552#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            550           1        226  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    596#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            592           3        259  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    597#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            592           3        259  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    598#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            592           3        259  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    660#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            657           2        297  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    677#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            674           2        313  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    679#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            677           1        314  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>    680#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            677           1        314  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+	***  The following warning looks like a recurrent problem;
+	***  it will be supressed till time = 10681.
+
+CLOCK>    681#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*    0   967      141            677           1        314  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  10000#*** WARNING: SIMCORE>
+		PCB 1 is ready and starving for at least 7000 time units.
+		Possible cause:
+			- Due to error in CPU module,
+			  was not inserted into ready queue.
+
+
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  10000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   538    20   none   none                 none    none     40  tutorial   *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    24
+  Total num of processes terminated                             =    7
+  Total num of processes killed                                 =    0
+        num of processes in CPU ready queue                     =   16
+        num of processes in event waiting queues                =    1
+
+  Total num of wait requests                               =  129
+  Total num of signals                                     =  300
+  Total num of timer interrupts                            =  593
+
+CPU time used                                        =  2088
+CPU utilization                                      =     0.2088
+
+Memory utilization                                   =     0.1568
+
+System throughput ( x 1000 )                         =     0.7000
+Average num of processes during simulation           =     9.2684
+Average CPU time per process                         =   342.7083
+Average waiting time per process                     =  3769.1250
+Average turnaround time per process                  =  3861.8333
+
+
+
+
+CLOCK>  10682#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10679           2        136  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10685#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10682           2        138  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10697#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10698#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10699#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10700#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10701#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10702#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10703#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  10704#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+
+
+	***  The following warning looks like a recurrent problem;
+	***  it will be supressed till time = 20705.
+
+CLOCK>  10705#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  waiting      0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  waiting      0 *
+*****************************************************************************
+
+CLOCK>  20000#*** WARNING: SIMCORE>
+		PCB 1 is ready and starving for at least 7000 time units.
+		Possible cause:
+			- Due to error in CPU module,
+			  was not inserted into ready queue.
+
+
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  20000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   788    30   none   none                 none    none     45  mail_box   *
+*   593    25   none   none                 none    none     43  news.sun   *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    31
+  Total num of processes terminated                             =   10
+  Total num of processes killed                                 =    0
+        num of processes in CPU ready queue                     =   19
+        num of processes in event waiting queues                =    2
+
+  Total num of wait requests                               =  185
+  Total num of signals                                     =  436
+  Total num of timer interrupts                            =  864
+
+CPU time used                                        =  2993
+CPU utilization                                      =     0.1497
+
+Memory utilization                                   =     0.5021
+
+System throughput ( x 1000 )                         =     0.5000
+Average num of processes during simulation           =    14.5364
+Average CPU time per process                         =   423.5161
+Average waiting time per process                     =  9275.3548
+Average turnaround time per process                  =  9378.3226
+
+
+
+
+CLOCK>  20706#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20707#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20708#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20709#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20710#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20711#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20712#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20713#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20714#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  20715#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+	***  The following warning looks like a recurrent problem;
+	***  it will be supressed till time = 30716.
+
+CLOCK>  20716#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30000#*** WARNING: SIMCORE>
+		PCB 20 is ready and starving for at least 7000 time units.
+		Possible cause:
+			- Due to error in CPU module,
+			  was not inserted into ready queue.
+
+
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  30000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   788    30   none   none                 none    none     45  mail_box   *
+*   593    25   none   none                 none    none     43  news.sun   *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    35
+  Total num of processes terminated                             =   12
+  Total num of processes killed                                 =    0
+        num of processes in CPU ready queue                     =   21
+        num of processes in event waiting queues                =    2
+
+  Total num of wait requests                               =  209
+  Total num of signals                                     =  485
+  Total num of timer interrupts                            =  974
+
+CPU time used                                        =  3358
+CPU utilization                                      =     0.1119
+
+Memory utilization                                   =     0.6526
+
+System throughput ( x 1000 )                         =     0.4000
+Average num of processes during simulation           =    16.8791
+Average CPU time per process                         =   392.9714
+Average waiting time per process                     = 14365.4286
+Average turnaround time per process                  = 14467.8000
+
+
+
+
+CLOCK>  30717#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30718#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30719#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30720#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30721#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30722#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30723#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30724#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30725#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  30726#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+	***  The following warning looks like a recurrent problem;
+	***  it will be supressed till time = 40727.
+
+CLOCK>  30727#*** WARNING: SIMCORE>
+		Idle CPU with non-empty ready queue.
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+CLOCK>  40000#*** WARNING: SIMCORE>
+		PCB 20 is ready and starving for at least 7000 time units.
+		Possible cause:
+			- Due to error in CPU module,
+			  was not inserted into ready queue.
+
+
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  40000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   788    30   none   none                 none    none     45  mail_box   *
+*   593    25   none   none                 none    none     43  news.sun   *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    38
+  Total num of processes terminated                             =   15
+  Total num of processes killed                                 =    0
+        num of processes in CPU ready queue                     =   21
+        num of processes in event waiting queues                =    2
+
+  Total num of wait requests                               =  230
+  Total num of signals                                     =  537
+  Total num of timer interrupts                            = 1073
+
+CPU time used                                        =  3713
+CPU utilization                                      =     0.0928
+
+Memory utilization                                   =     0.6481
+
+System throughput ( x 1000 )                         =     0.3750
+Average num of processes during simulation           =    18.4420
+Average CPU time per process                         =   371.9211
+Average waiting time per process                     = 19308.3421
+Average turnaround time per process                  = 19412.6053
+
+
+
+
+
+
+
+====================     End of Simulation     ====================
+
+
+CLOCK>  40000#*** WARNING: SIMCORE>
+		PCB 20 is ready and starving for at least 7000 time units.
+		Possible cause:
+			- Due to error in CPU module,
+			  was not inserted into ready queue.
+
+
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                                                               ::
+::                  Snapshot at clock :  40000                   ::
+::                                                               ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+              S I M C O R E   W A I T I N G   Q U E U E 
+*****************************************************************************
+* Event   PCB   IORB   File                  RRB    Rsrc   PRRB  SocketName *
+*---------------------------------------------------------------------------*
+*   788    30   none   none                 none    none     45  mail_box   *
+*   593    25   none   none                 none    none     43  news.sun   *
+*****************************************************************************
+
+
+
+                       S I M C O R E   P C B   T A B L E 
+*****************************************************************************
+*  PCB  Size  Created  Last dispatch  Last burst  Accum CPU  Status   Prior *
+*---------------------------------------------------------------------------*
+*   20  6177     8808           9703           2        637  ready        0 *
+*    1  1191      511             -1           0          0  ready        0 *
+*    3  4206     1018             -1           0          0  ready        0 *
+*    4  2254     1110             -1           0          0  ready        0 *
+*    6  5399     1764             -1           0          0  ready        0 *
+*    7  6295     1788             -1           0          0  ready        0 *
+*    8  3917     1886             -1           0          0  ready        0 *
+*    9  2348     2701             -1           0          0  ready        0 *
+*   10  2764     3149             -1           0          0  ready        0 *
+*   12  1726     4888             -1           0          0  ready        0 *
+*   13  4533     4967             -1           0          0  ready        0 *
+*   16  6728     6551             -1           0          0  ready        0 *
+*   18  6781     7753             -1           0          0  ready        0 *
+*   19  7453     8103             -1           0          0  ready        0 *
+*   21  7873     8933             -1           0          0  ready        0 *
+*   22  7617     9075             -1           0          0  ready        0 *
+*   23   567     9675             -1           0          0  ready        0 *
+*   24  5681    10318          10693           3        149  ready        0 *
+*   25  5492    11068          11370           1        159  waiting      0 *
+*   30  3302    18449          19372           1        546  waiting      0 *
+*   29  3303    13792             -1           0          0  ready        0 *
+*   32  6267    26458             -1           0          0  ready        0 *
+*   34  1590    29147             -1           0          0  ready        0 *
+*****************************************************************************
+
+
+
+=====================  Summary of Statistics  ====================
+
+Total num of processes created                            =    38
+  Total num of processes terminated                             =   15
+  Total num of processes killed                                 =    0
+        num of processes in CPU ready queue                     =   21
+        num of processes in event waiting queues                =    2
+
+  Total num of wait requests                               =  230
+  Total num of signals                                     =  537
+  Total num of timer interrupts                            = 1073
+
+CPU time used                                        =  3713
+CPU utilization                                      =     0.0928
+
+Memory utilization                                   =     0.6481
+
+System throughput ( x 1000 )                         =     0.3750
+Average num of processes during simulation           =    18.4420
+Average CPU time per process                         =   371.9211
+Average waiting time per process                     = 19308.3421
+Average turnaround time per process                  = 19412.6053
+
+
+
+
