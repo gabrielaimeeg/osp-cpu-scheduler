@@ -161,6 +161,7 @@ extern INT_VECTOR Int_Vector;                   /* interrupt vector         */
 
 /*******************************************************/
 
+#define NULL ((void *)0)
 #define MAX_PRIORITY 5;
 int QUANTUM_TIME = 5;
 
@@ -440,10 +441,11 @@ void insert_ready(PCB *pcb) {
         }
         //encontra a nova fila ideal para o processo baseado na sua nova prioridade
         find_new_queue(new_node);
-
+        
         // muda o status do processo para "ready"
         pcb->status = ready;
     }
 }
 
 /* end of module */
+
